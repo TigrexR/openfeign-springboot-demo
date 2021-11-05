@@ -7,9 +7,9 @@
 		<artifactId>hupu</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>game</artifactId>
+	<artifactId>team</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>game</name>
+	<name>team</name>
 	<description>game data</description>
 	<properties>
 		<java.version>11</java.version>

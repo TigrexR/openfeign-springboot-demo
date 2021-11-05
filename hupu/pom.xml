@@ -13,7 +13,11 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>hupu</name>
 	<modules>
-		<module>game</module>
+		<module>../game</module>
+		<module>../team</module>
+		<module>../player</module>
+		<module>../user</module>
+		<module>../news</module>
 	</modules>
 	<description>Demo project for Hupu Basketball</description>
 	<properties>
