@@ -9,6 +9,16 @@
         <option value="$PROJECT_DIR$/game/pom.xml" />
         <option value="$PROJECT_DIR$/hupu/pom.xml" />
         <option value="$PROJECT_DIR$/team/pom.xml" />
+        <option value="$PROJECT_DIR$/game/api/pom.xml" />
+        <option value="$PROJECT_DIR$/game/service/pom.xml" />
+        <option value="$PROJECT_DIR$/news/api/pom.xml" />
+        <option value="$PROJECT_DIR$/news/service/pom.xml" />
+        <option value="$PROJECT_DIR$/player/api/pom.xml" />
+        <option value="$PROJECT_DIR$/player/service/pom.xml" />
+        <option value="$PROJECT_DIR$/team/api/pom.xml" />
+        <option value="$PROJECT_DIR$/team/service/pom.xml" />
+        <option value="$PROJECT_DIR$/user/api/pom.xml" />
+        <option value="$PROJECT_DIR$/user/service/pom.xml" />
       </list>
     </option>
   </component>

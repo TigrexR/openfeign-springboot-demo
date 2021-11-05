@@ -6,21 +6,43 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="news" />
-        <module name="game" />
-        <module name="team" />
-        <module name="user" />
-        <module name="player" />
+        <module name="news-api" />
+        <module name="news-service" />
+        <module name="team-api" />
+        <module name="user-api" />
+        <module name="game-service" />
+        <module name="player-api" />
+        <module name="game-api" />
+        <module name="player-service" />
+        <module name="user-service" />
+        <module name="team-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="11" />
+      <module name="core" target="1.8" />
+      <module name="service" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="-parameters" />
       <module name="game" options="-parameters" />
-      <module name="news" options="-parameters" />
+      <module name="game-api" options="-parameters" />
+      <module name="game-service" options="-parameters" />
+      <module name="news" options="" />
+      <module name="news-api" options="-parameters" />
+      <module name="news-service" options="-parameters" />
       <module name="player" options="-parameters" />
+      <module name="player-api" options="-parameters" />
+      <module name="player-service" options="-parameters" />
+      <module name="service" options="-parameters" />
       <module name="team" options="-parameters" />
+      <module name="team-api" options="-parameters" />
+      <module name="team-service" options="-parameters" />
       <module name="user" options="-parameters" />
+      <module name="user-api" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>
