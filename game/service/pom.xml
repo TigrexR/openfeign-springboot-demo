@@ -11,9 +11,6 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>game-service</name>
 	<description>game service</description>
-	<properties>
-		<java.version>11</java.version>
-	</properties>
 	<packaging>jar</packaging>
 	<dependencies>
 		<dependency>
