@@ -13,6 +13,8 @@
         <module name="game-service" />
         <module name="player-api" />
         <module name="game-api" />
+        <module name="league-api" />
+        <module name="league-service" />
         <module name="player-service" />
         <module name="user-service" />
         <module name="team-service" />
@@ -30,6 +32,8 @@
       <module name="game" options="-parameters" />
       <module name="game-api" options="-parameters" />
       <module name="game-service" options="-parameters" />
+      <module name="league-api" options="-parameters" />
+      <module name="league-service" options="-parameters" />
       <module name="news" options="" />
       <module name="news-api" options="-parameters" />
       <module name="news-service" options="-parameters" />
