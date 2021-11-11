@@ -22,12 +22,20 @@ public class StatsDO implements Serializable {
     private String player;
     @Field(name = "team")
     private String team;
+    @Field(name = "season")
+    private String season;
     @Field(name = "date")
     private String date;
+    @Field(name = "min")
+    private Integer min;
     @Field(name = "pts")
     private Integer pts;
     @Field(name = "reb")
     private Integer reb;
+    @Field(name = "oreb")
+    private Integer oreb;
+    @Field(name = "dreb")
+    private Integer dreb;
     @Field(name = "ast")
     private Integer ast;
     @Field(name = "tov")

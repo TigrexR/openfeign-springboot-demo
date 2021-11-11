@@ -3,6 +3,8 @@ package com.tigrex.game.service.controller;
 import com.tigrex.game.api.po.StatsDO;
 import com.tigrex.game.service.service.StatsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,8 +15,8 @@ public class StatsController {
     @Autowired
     private StatsService service;
 
-    @RequestMapping(value = "/save")
-    public StatsDO save(StatsDO data, String collectionName) {
-        return service.insert(data, collectionName);
+    @PostMapping(value = "/save")
+    public StatsDO save(@RequestBody() StatsDO data) {
+        return service.insert(data, "stats");
     }
 }
