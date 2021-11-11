@@ -1,8 +1,7 @@
 package com.tigrex.game.service.service;
 
-import com.mongodb.client.result.DeleteResult;
-import com.mongodb.client.result.UpdateResult;
-import com.tigrex.game.api.po.StatsDO;
+import com.tigrex.game.api.bo.StatsBO;
+import com.tigrex.game.api.vo.StatsVO;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 
@@ -10,11 +9,11 @@ import java.util.List;
 
 public interface StatsService {
 
-    List<StatsDO> findAll(String collectionName);
+    List<StatsBO> findAll();
 
-    StatsDO insert(StatsDO data, String collectionName);
+    StatsBO insert(StatsVO data);
 
-    UpdateResult updateFirst(Query query, Update update, String collectionName);
+    StatsBO updateFirst(Query query, Update update);
 
-    DeleteResult remove(Query query, String collectionName);
+    StatsBO remove(Query query);
 }

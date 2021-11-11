@@ -1,9 +1,13 @@
 package com.tigrex.game.service.service.impl;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
+import com.tigrex.game.api.bo.StatsBO;
 import com.tigrex.game.api.po.StatsDO;
+import com.tigrex.game.api.vo.StatsVO;
 import com.tigrex.game.service.service.StatsService;
+import com.tigrex.game.service.utils.JacksonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
@@ -19,22 +23,25 @@ public class StatsServiceImpl implements StatsService {
     private MongoTemplate template;
 
     @Override
-    public List<StatsDO> findAll(String collectionName) {
-        return template.findAll(StatsDO.class, collectionName);
+    public List<StatsBO> findAll() {
+        return JacksonUtils.getJackson().convertValue(template.findAll(StatsDO.class, StatsBO.collectionName), new TypeReference<>() {});
     }
 
     @Override
-    public StatsDO insert(StatsDO data, String collectionName) {
-        return template.insert(data, collectionName);
+    public StatsBO insert(StatsVO data) {
+        return JacksonUtils.getJackson().convertValue(
+                template.insert(JacksonUtils.getJackson().convertValue(data, StatsDO.class), StatsBO.collectionName), StatsBO.class);
     }
 
     @Override
-    public UpdateResult updateFirst(Query query, Update update, String collectionName) {
-        return template.updateFirst(query, update, collectionName);
+    public StatsBO updateFirst(Query query, Update update) {
+        UpdateResult result = template.updateFirst(query, update, StatsBO.collectionName);
+        return null;
     }
 
     @Override
-    public DeleteResult remove(Query query, String collectionName) {
-        return template.remove(query, collectionName);
+    public StatsBO remove(Query query) {
+        DeleteResult result = template.remove(query, StatsBO.collectionName);
+        return null;
     }
 }

@@ -1,4 +1,4 @@
-package com.tigrex.game.api.bo;
+package com.tigrex.game.api.vo;
 
 import lombok.*;
 import lombok.experimental.Accessors;
@@ -11,11 +11,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Accessors(chain = true)
 @ToString
-public class StatsBO implements Serializable {
+public class StatsVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
-    public static final String collectionName = "stats";
 
     private String player;
     private String team;

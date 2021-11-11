@@ -1,7 +1,8 @@
 package com.tigrex.game.service.controller;
 
-import com.tigrex.game.api.po.StatsDO;
+import com.tigrex.game.api.vo.StatsVO;
 import com.tigrex.game.service.service.StatsService;
+import com.tigrex.game.service.utils.JacksonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,7 +17,7 @@ public class StatsController {
     private StatsService service;
 
     @PostMapping(value = "/save")
-    public StatsDO save(@RequestBody() StatsDO data) {
-        return service.insert(data, "stats");
+    public StatsVO save(@RequestBody() StatsVO data) {
+        return JacksonUtils.getJackson().convertValue(service.insert(data), StatsVO.class);
     }
 }
