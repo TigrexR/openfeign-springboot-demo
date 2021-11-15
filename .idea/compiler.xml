@@ -7,32 +7,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="news-api" />
-        <module name="news-service" />
-        <module name="team-api" />
-        <module name="user-api" />
         <module name="game-service" />
-        <module name="player-api" />
         <module name="game-api" />
         <module name="league-api" />
         <module name="league-service" />
         <module name="player-service" />
         <module name="user-service" />
         <module name="team-service" />
+        <module name="news-api" />
+        <module name="core" />
+        <module name="news-service" />
+        <module name="team-api" />
+        <module name="user-api" />
+        <module name="player-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api" target="11" />
-      <module name="core" target="1.8" />
+      <module name="generator" target="11" />
       <module name="service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api" options="-parameters" />
+      <module name="core" options="-parameters" />
       <module name="game" options="-parameters" />
       <module name="game-api" options="-parameters" />
       <module name="game-service" options="-parameters" />
+      <module name="generator" options="-parameters" />
       <module name="league-api" options="-parameters" />
       <module name="league-service" options="-parameters" />
       <module name="news" options="" />

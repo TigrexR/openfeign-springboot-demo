@@ -1,4 +1,4 @@
-package com.tigrex.game.api.bo;
+package com.tigrex.game.service.bo;
 
 import lombok.*;
 import lombok.experimental.Accessors;

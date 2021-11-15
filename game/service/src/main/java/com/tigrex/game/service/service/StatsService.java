@@ -1,7 +1,7 @@
 package com.tigrex.game.service.service;
 
-import com.tigrex.game.api.bo.StatsBO;
-import com.tigrex.game.api.vo.StatsVO;
+import com.tigrex.game.service.bo.StatsBO;
+import com.tigrex.game.service.vo.StatsVO;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 

@@ -1,8 +1,8 @@
 package com.tigrex.game.service.controller;
 
-import com.tigrex.game.api.vo.StatsVO;
+import com.tigrex.core.utils.JacksonUtils;
+import com.tigrex.game.service.vo.StatsVO;
 import com.tigrex.game.service.service.StatsService;
-import com.tigrex.game.service.utils.JacksonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

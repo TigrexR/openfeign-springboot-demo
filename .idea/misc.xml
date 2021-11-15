@@ -20,6 +20,8 @@
         <option value="$PROJECT_DIR$/user/api/pom.xml" />
         <option value="$PROJECT_DIR$/user/service/pom.xml" />
         <option value="$PROJECT_DIR$/league/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis-plus-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/hupu/core/pom.xml" />
       </list>
     </option>
   </component>

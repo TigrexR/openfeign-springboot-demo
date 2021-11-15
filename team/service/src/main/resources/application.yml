@@ -1,2 +1,9 @@
 server:
-  port: 1024
+  port: 1325
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      jdbc-url: dbc:mysql://192.168.1.124:3306/team?useUnicode=true&useSSL=false&characterEncoding=utf8
+      username: divincenzo
+      password: 123456
