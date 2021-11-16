@@ -1,4 +1,4 @@
-package com.tigrex.game.service;
+package com.tigrex.team.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

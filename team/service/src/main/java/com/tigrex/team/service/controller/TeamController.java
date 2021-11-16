@@ -24,8 +24,6 @@ public class TeamController {
 
     @PostMapping(value = "list")
     public List<TeamVO> list(@RequestBody()TeamQuery query) {
-        QueryWrapper<TeamDO> wrapper = new QueryWrapper<>();
-        wrapper.eq("name", query.getName());
-        return JacksonUtils.getJackson().convertValue(service.list(wrapper), new TypeReference<>() {});
+        return JacksonUtils.getJackson().convertValue(service.list(query), new TypeReference<>() {});
     }
 }
