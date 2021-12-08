@@ -18,6 +18,7 @@
 		<module>../player</module>
 		<module>../user</module>
 		<module>../news</module>
+		<module>core</module>
 	</modules>
 	<description>Demo project for Hupu Basketball</description>
 	<properties>
