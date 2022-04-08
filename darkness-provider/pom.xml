@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.tigrex</groupId>
+		<artifactId>darkness-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>darkness-provider</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<name>darkness-provider</name>
+
+	<modules>
+		<module>darkness-provider-sdk</module>
+		<module>darkness-provider-service</module>
+	</modules>
+</project>
