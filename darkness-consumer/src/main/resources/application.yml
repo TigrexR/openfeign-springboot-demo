@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      server-addr: 47.99.243.32:8848
+      discovery:
+        server-addr: 47.99.243.32:8848
+      config:
+        server-addr: 47.99.243.32:8848
+server:
+  port: 61301

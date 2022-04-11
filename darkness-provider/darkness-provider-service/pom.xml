@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
 		<groupId>com.tigrex</groupId>
-		<artifactId>darkness-parent</artifactId>
+		<artifactId>darkness-provider</artifactId>
 		<version>1.0.0</version>
 	</parent>
 
-	<artifactId>darkness-consumer</artifactId>
+	<artifactId>darkness-provider-service</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>darkness-consumer</name>
+	<name>darkness-provider-service</name>
 
 	<dependencies>
 		<dependency>
@@ -53,12 +53,18 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>${mybatis-plus.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 
 		<dependency>
@@ -71,12 +77,12 @@
 			<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
 			<version>${nacos-config.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>com.alibaba.cloud</groupId>
-			<artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-			<version>${sentinel.version}</version>
-		</dependency>
 
+		<dependency>
+			<groupId>com.tigrex</groupId>
+			<artifactId>darkness-core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 		<dependency>
 			<groupId>com.tigrex</groupId>
 			<artifactId>darkness-provider-sdk</artifactId>

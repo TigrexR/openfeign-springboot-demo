@@ -1,2 +1,2 @@
-# dubbo-springboot-demo
-dubbo springboot demo
+# openfeign springboot demo
+openfeign springboot demo
